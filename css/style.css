@@ -1,0 +1,69 @@
+body {
+  background: hsla(110, 20%, 60%, 0.5);
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+pre, p, h1, h2, h3, h4, h5, h6, div, ol, ul, li {  margin: 0;  padding: 0; }
+.image { margin-left: 15%;}
+.center { text-align: center;}
+.comment { color: #4B6170; }
+.white  { color: #fff; }
+.firebrick { color: firebrick; }
+.green { color: green; }
+.cornflowerblue { color: cornflowerblue; }
+.small { font-size: 75%;}
+
+.abstract,
+.example {
+  width: 300px;
+  height: 120px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 4px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  vertical-align: top;
+
+}
+
+
+@media screen and  (min-width: 1280px) {
+  .wrapper{
+    width: 1280px;
+    margin: auto;
+  }
+  .pair { display: inline-block; }
+}
+@media screen and (min-width:640px) and (max-width: 1279px) {
+  .wrapper {
+    width: 640px;
+    margin: auto;
+  }
+  .pair { display: inline-block; }
+}
+@media screen and (min-width: 320px) and (max-width:639px){
+  .pair {
+    display: block;
+  }
+  .abstract,
+  .example {
+    display: block;
+    margin: auto;
+    margin-top: 4px;
+    box-sizing: border-box;
+  }
+}
+
+.abstract {
+  background: hsla(155, 50%, 100%, 1);
+  color: #222;
+}
+.example {
+  background: hsla(200, 10%, 10%, 0.8);
+  color: #F57900;
+  font-family: monospace;
+  line-height: 1.1;
+}
+
+.code { color: #F57900; }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tools</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- #tools -->
+        <div class="about-tools">
+          <h1>Tools</h1>
+            <div class="pair">
+                <div class="abstract">
+                  <h4 class="center">Editors:</h4>
+                  <p><a href="https://atom.io/" target="_blank">Atom</a></p>
+                  <p><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a></p>
+                  <p><a href="http://brackets.io/" target="_blank">Brackets</a></p>
+                  <p><a href="https://code.visualstudio.com/"  target="_blank">Visual Studio Code</a></p>
+                </div>
+                <div class="example">
+                  <p class="comment">&lt;!-- Плагины --&gt;</p>
+                  <p>Emmet, atom beautify</p>
+                  <p>Linter htmlhint</p>
+                  <p>Linter csslint</p>
+                  <p>Live server</p>
+                </div>
+            </div>
+            <div class="pair">
+                <div class="abstract">
+                  <h4 class="center">Справочники</h4>
+                  <p>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Mozilla: HTML</a>,
+                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">Mozilla: CSS</a>
+                    <a href="https://css-tricks.com/guides/" target="_blank">CSS-trics: CSS</a>
+                    <a href="https://www.smashingmagazine.com/tag/html/" target="_blank">smashingmagazine: HTML</a>
+                    <a href="https://www.smashingmagazine.com/tag/css/" target="_blank">smashingmagazine: CSS</a>
+
+                  </p>
+                </div>
+                <div class="example">
+                  <p class="comment">&lt;!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;Ошибка? Ответ здесь: <br>--&gt;</p>
+                  <p><a class="code" href="http://stackoverflow.com/questions/tagged/html+css">&nbsp;stackoverflow&nbsp;</a></p>
+                </div>
+            </div>
+          </div>
+          <!-- cli  -->
+          <div class="about-cli">
+            <h1><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html">C<span class="small">ommand</span> L<span class="small">ine</span> I</a></h1>
+            <div class="pair">
+                <div class="abstract">
+                  <p><strong>Project/</strong></p>
+                  <p>&nbsp;&nbsp;<strong>css/</strong></p>
+                  <p>&nbsp;&nbsp;<strong>index.html</strong></p>
+                </div>
+                <div class="example">
+                  <p class="white">$ mkdir Project</p>
+                  <p class="white">$ cd Project</p>
+                  <p class="white">$ mkdir css</p>
+                  <p class="white">$ echo &gt; index.html</p>
+                  <p class="white">$ cd css</p>
+                </div>
+            </div>
+            <div class="pair">
+                <div class="abstract">
+                  <p>Project/</p>
+                  <p>&nbsp;&nbsp;index.html</p>
+                  <p>&nbsp;&nbsp;css/<strong>fonts/serif</strong></p>
+                  <p>&nbsp;&nbsp;<strong>.gitignore</strong></p>
+                  <!-- <p>&nbsp;&nbsp;<strong>img/</strong></p> -->
+                </div>
+                <div class="example">
+                  <p class="white">$ mkdir fonts</p>
+                  <p class="white">$ cd fonts</p>
+                  <p class="white">$ mkdir serif</p>
+                  <p class="white">$ cd ../.. </p>
+                  <p class="white">$ echo &gt; .gitignore</p>
+
+                </div>
+            </div>
+        </div>
+        <!--  emmet -->
+        <div class="about-emmet">
+          <h1> <a href="https://docs.emmet.io/cheat-sheet/">Emmet HTML</a></h1>
+            <div class="pair">
+                <div class="abstract">
+                  <h4>Символы + клавиша tab</h4>
+                  <p>div</p>
+                  <p>.box</p>
+                  <p>#box</p>
+                  <p>div{Hello}</p>
+                </div>
+                <div class="example">
+                  <p class="comment">&lt;!-- HTML emmet --&gt;</p>
+                  <p>&lt;div&gt;&lt;/div&gt;</p>
+                  <p>&lt;div
+                    <span class="firebrick">class</span><em class="white">=</em><span class="green">"box"</span>&gt;&lt;/div&gt;
+                  </p>
+                  <p>&lt;div
+                    <span class="cornflowerblue">id</span><em class="white">=</em><span class="green">"box"</span>&gt;&lt;/div&gt;
+                  </p>
+                  <p>&lt;div&gt;<span class="white">Hello</span>&lt;/div&gt;</p>
+                </div>
+            </div>
+            <div class="pair">
+                <div class="abstract">
+                  <br>
+                  <br>
+                  ul&gt;li&gt;a[#]{L}
+                </div>
+                <div class="example">
+                <p>&lt;ul&gt;</p>
+                <p>&nbsp;&nbsp;&lt;li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a
+                  <span class="firebrick">href</span><em class="white">=</em><span class="green">"#"</span>&gt;<span class="white">L</span>&lt;/a&gt;</p>
+                <p>&nbsp;&nbsp;&lt;/li&gt;</p>
+                <p>&lt;/ul&gt;</p>
+                </div>
+            </div>
+            <div class="pair">
+                <div class="abstract">
+                  <br>
+                  <br>
+                  ul&gt;(li{item $$})*3
+                </div>
+                <div class="example">
+                  <p>&lt;ul&gt;</p>
+                  <p>&nbsp;&nbsp;&lt;li&gt;<span class="white">item 01</span>&lt;/li&gt;</p>
+                  <p>&nbsp;&nbsp;&lt;li&gt;<span class="white">item 02</span>&lt;/li&gt;</p>
+                  <p>&nbsp;&nbsp;&lt;li&gt;<span class="white">item 03</span>&lt;/li&gt;</p>
+                  <p>&lt;/ul&gt;</p>
+                </div>
+            </div>
+            <div class="pair">
+                <div class="abstract">
+                  <br>
+                  <br>
+                   p&gt;strong{Strong }+em{Em}
+                </div>
+                <div class="example">
+                  &lt;p&gt;<br>
+                  &nbsp;&nbsp;&lt;strong&gt;<spam class="white">Strong</spam>&lt;/strong&gt;<br>
+                  &nbsp;&nbsp;&lt;em&gt;<span class="white">Em</span>&lt;/em&gt;<br>
+                  &lt;/p&gt;
+                </div>
+            </div>
+        </div>
+        <!--  #emmet-css-->
+        <div class="about-emmet-css">
+          <h1><a href="https://docs.emmet.io/cheat-sheet/">Emmet CSS</a></h1>
+          <div class="pair">
+            <div class="abstract">
+              <p>d</p>
+              <p>d:ib</p>
+              <p>m</p>
+              <p>m:a</p>
+              <p>m100</p>
+            </div>
+            <div class="example">
+              <p>display:block;</p>
+              <p>display:inline-block;</p>
+              <p>margin: ;</p>
+              <p>margin:auto;</p>
+              <p>margin: 100px;</p>
+            </div>
+          </div>
+          <div class="pair">
+            <div class="abstract">
+              <p>pt10rem</p>
+              <p>pl10%</p>
+              <p>h100</p>
+              <p>w:a</p>
+              <p>bxz</p>
+            </div>
+            <div class="example">
+              <p>padding-top: 10rem;</p>
+              <p>padding-left: 10%;</p>
+              <p>height: 100px;</p>
+              <p>width: auto;</p>
+              <p>box-sizing: border-box;</p>
+            </div>
+          </div>
+          <div class="pair">
+            <div class="abstract">
+              <p>bd+</p>
+              <p>bdc:t</p>
+              <p>bg+</p>
+              <br>
+              <p>c:ra</p>
+            </div>
+            <div class="example">
+              <p>border: 1px solid #000;</p>
+              <p>border-color: transparent;</p>
+              <p>background: #fff url() 0 0 no-repeat;</p>
+              <p>color: rgba(0, 0, 0, .5);</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="pair">
+            <div class="abstract">
+              <p>fs:i</p>
+              <p>fz16</p>
+              <p>ff:v</p>
+              <br>
+              <p>va</p>
+            </div>
+            <div class="example">
+              <p>font-style:italic;</p>
+              <p>font-size: 16px;</p>
+              <p>font-family: Verdana, Geneva, sans-serif;</p>
+              <p>vertical-align: top;</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+    console.log(document.body);
+    </script>
+</body>
+
+</html>
